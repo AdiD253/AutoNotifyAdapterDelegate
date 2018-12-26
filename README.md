@@ -17,7 +17,7 @@ class SampleAdapter : RecyclerView.Adapter<SampleViewHolder>() {
 }
 ```
 
-Note: class SampleItem has to implement DiffItem Interface:
+Note: class SampleItem has to implement DiffItem interface:
 
 ```kotlin
 class SampleItem(
@@ -29,7 +29,7 @@ class SampleItem(
 }
 ```
 
-`getItemId()`: the value that specifies whether this specific item is different from another (generally some kind of id)
+`getItemId()`: the value that specifies whether this specific item is different from another (generally some kind of ID)
 `getDiff()`: the value that specifies whether this specific item's content differs from another with the same id
 
 ### Download
@@ -40,7 +40,7 @@ implementation 'com.adid.adapterdelegate:autonotifyadapterdelegate:1.0.0'
 
 ### Licence
 
-Copyright [2018] [Adrian Defus]
+Copyright (c) 2018 Adrian Defus
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
