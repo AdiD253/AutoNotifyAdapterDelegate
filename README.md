@@ -1,7 +1,7 @@
 # AutoNotifyAdapterDelegate
 Kotlin delegate extension for Android RecyclerView Adapter item list which uses [DiffUtil](https://developer.android.com/reference/android/support/v7/util/DiffUtil) to automatically dispatch updates to adapter.
 
-      ![](static/diff_list.gif)
+![](static/diff_list.gif)
 
 ### Usage
 
