@@ -11,7 +11,11 @@ import kotlinx.android.synthetic.main.item_sample_adapter.view.*
 
 class SampleAdapter : RecyclerView.Adapter<SampleViewHolder>() {
 
-    private var itemList: List<SampleItem> by autoNotifyDelegate(adapter = this, initialValue = listOf())
+    private var itemList: List<SampleItem> by autoNotifyDelegate(
+        adapter = this,
+        initialValue = listOf(),
+        async = true
+    )
 
     fun setItems(itemList: List<SampleItem>) {
         this.itemList = itemList
@@ -34,7 +38,7 @@ class SampleAdapter : RecyclerView.Adapter<SampleViewHolder>() {
     override fun getItemCount() = itemList.size
 }
 
-class SampleViewHolder(val view: View): RecyclerView.ViewHolder(view) {
+class SampleViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
 
     fun bind(item: SampleItem) {
         view.sampleItem.text = item.name

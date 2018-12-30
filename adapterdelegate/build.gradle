@@ -6,14 +6,14 @@ publish {
 
     def groupProjectID = 'com.adid.adapterdelegate'
     def artifactProjectID = 'autonotifyadapterdelegate'
-    def publishVersionID = '1.0.1'
+    def publishVersionID = '1.0.2'
 
     userOrg = 'adid253'
     repoName = 'AutoNotifyAdapterDelegate'
     groupId = groupProjectID
     artifactId = artifactProjectID
     publishVersion = publishVersionID
-    desc = 'Kotlin delegate extension for Android RecyclerView Adapter item list which uses DiffUtil to automatically dispatch updates to adapter.'
+    desc = 'Kotlin delegate extension for Android RecyclerView Adapter item list which uses DiffUtil to automatically dispatch updates to the adapter.'
     website = 'https://github.com/AdiD253/AutoNotifyAdapterDelegate'
 
 }
