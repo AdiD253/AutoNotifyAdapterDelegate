@@ -9,7 +9,11 @@ If you hold a list of items inside RecyclerView.Adapter class, simply use autoNo
 ```kotlin
 class SampleAdapter : RecyclerView.Adapter<SampleViewHolder>() {
 
-    private var itemList: List<SampleItem> by autoNotifyDelegate(adapter = this, initialValue = listOf())
+    private var itemList: List<SampleItem> by autoNotifyDelegate(
+        adapter = this,
+        initialValue = listOf(),
+        async = true
+    )
     
     fun setItems(itemList: List<SampleItem>) {
         this.itemList = itemList
@@ -19,7 +23,7 @@ class SampleAdapter : RecyclerView.Adapter<SampleViewHolder>() {
 }
 ```
 
-Note: class SampleItem has to implement DiffItem interface:
+Note: `SampleItem` class has to implement `DiffItem` interface:
 
 ```kotlin
 class SampleItem(
@@ -37,7 +41,7 @@ class SampleItem(
 ### Download
 
 ```groovy
-implementation 'com.adid.adapterdelegate:autonotifyadapterdelegate:1.0.1'
+implementation 'com.adid.adapterdelegate:autonotifyadapterdelegate:1.0.2'
 ```
 
 ### Licence
