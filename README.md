@@ -46,7 +46,7 @@ implementation 'com.adid.adapterdelegate:autonotifyadapterdelegate:1.0.2'
 
 ### Licence
 
-Copyright (c) 2018 Adrian Defus
+Copyright (c) 2019 Adrian Defus
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
